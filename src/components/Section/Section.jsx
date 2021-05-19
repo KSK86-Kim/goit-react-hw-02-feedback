@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import styles from './Section.module.css';
 
 class Section extends Component {
     render() {
-        const { title, children } = this.props;
-        return (
-            <section>
-                <h2>{title}</h2>
-                {children}
-            </section>
-        );
+        const { children } = this.props;
+        return <section>{children}</section>;
     }
 }
 Section.propTypes = {

@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styles from './FeedbackOptions.module.css';
 
-class FeedbackOptions extends React.Component {
+class FeedbackOptions extends Component {
     render() {
         const { options, onLeaveFeedback } = this.props;
         return (
@@ -22,8 +22,8 @@ class FeedbackOptions extends React.Component {
 }
 
 FeedbackOptions.propTypes = {
-    onLeaveFeedback: PropTypes.func,
     options: PropTypes.arrayOf(PropTypes.string),
+    onLeaveFeedback: PropTypes.func,
 };
 
 export default FeedbackOptions;
